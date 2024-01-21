@@ -506,18 +506,9 @@ img {
   fill: #ffffff;
 }
 .pit-form {
-  max-width: 300px;
-  display: block;
   flex-direction: column;
   gap: 12px;
   align-items: flex-start;
-  margin-top: 112px;
-  margin-left: 12px;
-  margin-right: 50px;
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  color: #a9a7a7;
 }
 .label-pit {
   font-size: 12px;
@@ -721,12 +712,14 @@ input[type="checkbox"]:checked + label span {
   fill: #f4f4fd;
 }
 .href-chek {
-  color: #4d5ae5;
+  color: #4d5ae5
   font-size: 12px;
 }
 .chek-btn {
   display: block;
   min-width: 169px;
+  margin: 0 auto;
+  margin-top: 20px;
   height: 56px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -738,8 +731,6 @@ input[type="checkbox"]:checked + label span {
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #4d5ae5;
-  transform: translate(60px, -25px);
+  border-radius: 4px;
 }
-.icon-chek {
-  margin-left: 40px;
-}
+
