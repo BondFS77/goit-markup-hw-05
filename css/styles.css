@@ -470,6 +470,7 @@ img {
   pointer-events: auto;
 }
 .modal {
+  padding: 72px 24px 24px 24px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -524,31 +525,52 @@ img {
   color: #a9a7a7;
 }
 .label-pit {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  float: right;
-}
-.input-pit {
-  padding: 4px;
-}
-.police {
-  color: var(--IRIS, #4d5ae5);
-
-  /* Link Text */
-  font-family: Roboto;
   font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0.48px;
-  text-decoration-line: underline;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  display: block;
+  color: #8e8f99;
+  margin-bottom: 4px;
+  position: relative;
+}
+
+.input-pit {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding-left: 38px;
+  outline: transparent;
+}
+.input-pit:focus {
+  border-color: #4d5ae5;
+}
+.input-pit-area {
+  width: 100%;
+  height: 120px;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  line-height: 1.17;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 8px 16px;
+  outline: transparent;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input-pit-area:focus {
+  border-color: #4d5ae5;
 }
 .radio-btn {
   stroke-width: 1px;
   stroke: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
 }
 .pit-radio-btn {
+  margin-bottom: 24px;
 }
 .btn-smb {
   display: inline-flex;
@@ -585,22 +607,26 @@ btn-smb:focus {
   margin-top: 2%;
 }
 .pit-mod-text {
-  color: var(--NAVY-BLUE, #2e2f42);
-  text-align: center;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 150% */
-  letter-spacing: 0.32px;
-  width: 360px;
-  margin-top: 70px;
-  margin-left: 5%;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+  color: #2e2f42;
 }
 .icon-pit-box {
   position: absolute;
-  left: 10px;
-  transform: translateY(-50%), translateY(100%);
+  left: 16px;
+  top: 50%;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(-50%);
+}
+.icon-pit-box:focus {
+  fill: #4d5ae5;
+}
+.div-comm {
+  margin-bottom: 16px;
 }
 .pit-subscribe {
   display: flex;
@@ -638,7 +664,7 @@ btn-smb:focus {
   justify-content: center;
   align-items: center;
   font-family: "Roboto", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -654,4 +680,61 @@ btn-smb:focus {
 }
 .icon-sbc {
   margin-left: 16px;
+}
+.form-wind {
+  margin-bottom: 8px;
+}
+.check-inp {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.check-lab {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+.sp-chek {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+input [type="checkbox"]:checked + .sp-chek {
+  border: none;
+  background-color: #404bbf;
+  fill: #f4f4fd;
+}
+.href-chek {
+  color: #4d5ae5;
+}
+.chek-btn {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #4d5ae5;
 }
