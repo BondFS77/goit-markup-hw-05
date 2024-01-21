@@ -131,15 +131,8 @@ img {
 }
 .visually-hidden {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  left: -9999px;
+  visibility: hidden;
 }
 .features {
   padding: 120px 0;
@@ -727,8 +720,12 @@ input [type="checkbox"]:checked + .sp-chek {
   background-color: #404bbf;
   fill: #f4f4fd;
 }
+input [type="checkbox"]:checked + .sp-chek span {
+  fill: #f4f4fd;
+}
 .href-chek {
   color: #4d5ae5;
+  font-size: 12px;
 }
 .chek-btn {
   display: block;
@@ -744,5 +741,8 @@ input [type="checkbox"]:checked + .sp-chek {
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #4d5ae5;
-  transform: translateX(60px);
+  transform: translate(60px, -25px);
+}
+.icon-chek {
+  margin-left: 40px;
 }
