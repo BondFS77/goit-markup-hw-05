@@ -715,12 +715,9 @@ btn-smb:focus {
   justify-content: center;
   fill: transparent;
 }
-input [type="checkbox"]:checked + .sp-chek {
+input[type="checkbox"]:checked + .sp-chek {
   border: none;
   background-color: #404bbf;
-  fill: #f4f4fd;
-}
-input [type="checkbox"]:checked + .sp-chek span {
   fill: #f4f4fd;
 }
 .href-chek {
