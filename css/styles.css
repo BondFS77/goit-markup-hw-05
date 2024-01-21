@@ -715,7 +715,7 @@ btn-smb:focus {
   justify-content: center;
   fill: transparent;
 }
-input[type="checkbox"]:checked + span {
+input[type="checkbox"]:checked + label span {
   border: none;
   background-color: #404bbf;
   fill: #f4f4fd;
