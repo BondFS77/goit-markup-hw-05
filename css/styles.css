@@ -512,7 +512,7 @@ img {
 }
 .pit-form {
   max-width: 300px;
-  display: flex;
+  display: block;
   flex-direction: column;
   gap: 12px;
   align-items: flex-start;
@@ -531,6 +531,9 @@ img {
   display: block;
   color: #8e8f99;
   margin-bottom: 4px;
+  position: relative;
+}
+.pit-box-inp {
   position: relative;
 }
 
@@ -639,6 +642,7 @@ btn-smb:focus {
   letter-spacing: 0.02em;
   margin-bottom: 16px;
   font-weight: 500;
+  transform: translateX(100%);
 }
 .input-sbc {
   width: 264px;
@@ -677,6 +681,7 @@ btn-smb:focus {
 .form-sbc {
   display: flex;
   gap: 24px;
+  margin-top: 40px;
 }
 .icon-sbc {
   margin-left: 16px;
@@ -737,4 +742,5 @@ input [type="checkbox"]:checked + .sp-chek {
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #4d5ae5;
+  transform: translateX(60px);
 }
